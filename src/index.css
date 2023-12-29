@@ -7,7 +7,7 @@
 
 body {
   width: auto;
-  height: max-content;
+  height: auto;
   background: var(--BG-1, #292f36);
 }
 
@@ -35,10 +35,10 @@ body {
 
 
 .card {
-  width: 80%;
+  width: 90%;
   max-width: 470px;
   background: url('../public/assets/images/card_bg.png');
-  margin: -30px auto 0;
+  margin: -30px auto 10px;
   border-radius: 20px;
   padding: 40px 25px;
   text-align: center;
@@ -122,8 +122,17 @@ body {
 }
 
 @media (max-width: 768px) {
+
+  .body {
+    height: max-content;
+  }
+
   .menu {
     flex-direction: column;
+  }
+
+  .card {
+    margin: -30px auto 0;
   }
 
   .search input {
@@ -138,5 +147,11 @@ body {
 
   .search button img {
     width: 15px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 18px;
+    margin-top: -6px;
   }
 }
