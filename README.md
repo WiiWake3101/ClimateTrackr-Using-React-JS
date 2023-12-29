@@ -71,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Output
 
-[climateTrackr.surge.sh](https://climatetrackr.surge.sh/)
+[climateTrackr.surge.sh](climateTrackr.surge.sh)
