@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./index.css"; // Import CSS styles
+import Card from "./Weathercard";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <MenuBar />
+      <ContentBox />
+      {}
     </div>
   );
-}
+};
+
+const MenuBar = () => {
+  return (
+    <div className="Menu_bar_rect">
+      <p className="Menu_bar_font">ClimateTrackr</p>
+      <hr className="below_menu_bar_line" /> {/* Properly closed <hr> tag */}
+    </div>
+  );
+};
+
+const ContentBox = () => {
+  return (
+    <div className="Content_box">
+      <Card />
+    </div>
+  );
+};
 
 export default App;
